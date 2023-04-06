@@ -19,9 +19,9 @@ const App = () => {
 
   return(
         <BrowserRouter>
-        <ScrollToTop />
         <Box sx={{backgroundColor: '#000'}}>
             <Navbar />
+        <ScrollToTop />
             <Routes>
                 <Route path='/' exact element={<Feed />} />
                 <Route path='/video/:id'  element={<VideoDetail />} />
